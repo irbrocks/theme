@@ -1,5 +1,85 @@
+/*
+ * Main style, define de base containers of website
+ */
 body {
   font-size: 16px;
   font-family: Arial, sans-serif;
-  background-color: #ddd;
-  color: #444; }
+  background-color: #F9F9F9;
+  color: #444;
+  margin: 0; }
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.blog-post {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 10px; }
+
+/*
+ * Styles for the header. Now it's content navigation and logo
+ */
+/* The animation code */
+@keyframes console {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+header {
+  max-width: 800px;
+  height: 60px;
+  margin: 10px auto;
+  padding: 12px 15px;
+  border-bottom: 1px solid #D1B4B4; }
+  header .blog-logo {
+    position: relative;
+    float: left; }
+    header .blog-logo:after {
+      content: '';
+      opacity: 0;
+      position: absolute;
+      bottom: 2px;
+      width: 30px;
+      left: 15px;
+      height: 3px;
+      background-color: #BA0A0A;
+      animation: console 5s ease-out 0s infinite alternate; }
+    header .blog-logo:hover:after {
+      right: 15px;
+      left: inherit; }
+    header .blog-logo img {
+      width: 70px;
+      transition: all 0.3s; }
+      header .blog-logo img:hover {
+        transform: rotateY(180deg); }
+  header .blog-info {
+    float: left;
+    margin-left: 10px; }
+    header .blog-info .blog-title {
+      font-size: 1.5em;
+      margin: 5px 0; }
+    header .blog-info .blog-description {
+      font-size: .8em;
+      color: #999;
+      margin: 5px 0;
+      font-weight: 200;
+      font-style: italic; }
+  header ul.nav {
+    list-style: none;
+    float: right;
+    margin-top: 20px; }
+    header ul.nav li {
+      float: left;
+      margin-right: 20px; }
+      header ul.nav li:last-child {
+        margin-right: 0; }
+
+/*
+ * Styles for texts. It's include paragraphs, anchors, text...
+ */
+a {
+  text-decoration: none; }

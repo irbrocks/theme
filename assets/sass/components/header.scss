@@ -1,0 +1,86 @@
+/*
+ * Styles for the header. Now it's content navigation and logo
+ */
+
+/* The animation code */
+@keyframes console {
+  0% { opacity: 0 }
+  90% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+header {
+  max-width: 800px;
+  height: 60px;
+  margin: 10px auto;
+  padding: 12px 15px;
+  border-bottom: 1px solid #D1B4B4;
+
+  // LOGO
+  .blog-logo {
+    position: relative;
+    float: left;
+
+    // Animation ;)
+    &:after {
+      content: '';
+      opacity: 0;
+      position: absolute;
+      bottom: 2px;
+      width: 30px;
+      left: 15px;
+      height: 3px;
+      background-color: #BA0A0A;
+      animation: console 5s ease-out 0s infinite alternate;
+    }
+
+    &:hover:after {
+      right: 15px;
+      left: inherit;
+    }
+
+    img {
+      width: 70px;
+      transition: all .3s;
+
+      &:hover {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  // Info
+  .blog-info {
+    float: left;
+    margin-left: 10px;
+
+    .blog-title {
+      font-size: 1.5em;
+      margin: 5px 0;
+    }
+
+    .blog-description {
+      font-size: .8em;
+      color: #999;
+      margin: 5px 0;
+      font-weight: 200;
+      font-style: italic;
+    }
+  }
+
+  // Navigation
+  ul.nav {
+    list-style: none;
+    float: right;
+    margin-top: 20px;
+
+    li {
+      float: left;
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

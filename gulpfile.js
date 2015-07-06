@@ -4,10 +4,12 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 
+// Default task to see sass
 gulp.task('default', function() {
   gulp.start('sass:watch');
 });
 
+// Compile sass files
 gulp.task('sass', function () {
   gulp.src('./assets/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -15,6 +17,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./assets/css'));
 });
 
+// Compile sass files into a minimal version (compressed)
 gulp.task('sass:production', function (){
   gulp.src('./assets/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -22,7 +25,8 @@ gulp.task('sass:production', function (){
     .pipe(concat('irb.rocks.min.css'))
     .pipe(gulp.dest('./assets/css'));
 });
- 
+
+// Watch sass files to compile it on changes
 gulp.task('sass:watch', function () {
   gulp.watch('./assets/sass/**/*.scss', ['sass']);
 });

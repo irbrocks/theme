@@ -1,6 +1,22 @@
+/*
+ * Main style, define de base containers of website
+ */
+
 body {
   font-size: 16px;
   font-family: Arial, sans-serif;
-  background-color: #ddd;
+  background-color: #F9F9F9;
   color: #444;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-post {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 10px;
 }
