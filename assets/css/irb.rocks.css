@@ -3,7 +3,7 @@
  */
 body {
   font-size: 16px;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #F9F9F9;
   color: #444;
   margin: 0; }
@@ -12,10 +12,41 @@ body {
   max-width: 800px;
   margin: 0 auto; }
 
-.blog-post {
-  max-width: 800px;
-  margin: 10px auto;
-  padding: 10px; }
+.clearfix:after,
+.clearfix:before {
+  content: "\0020";
+  height: 0;
+  visibility: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * Post list on index
+ */
+main .post,
+.main .post {
+  margin: 20px 0; }
+  main .post .post-header .post-title,
+  .main .post .post-header .post-title {
+    margin: 0 0 10px; }
+    main .post .post-header .post-title a,
+    .main .post .post-header .post-title a {
+      font-family: 'PT Serif', serif;
+      font-weight: 400;
+      font-size: 2em;
+      color: #E61F1F; }
+  main .post .post-meta img.author,
+  .main .post .post-meta img.author {
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    display: inline; }
+  main .post .post-meta .tags-time,
+  .main .post .post-meta .tags-time {
+    position: relative;
+    top: -13px;
+    margin-left: 10px; }
 
 /*
  * Styles for the header. Now it's content navigation and logo
