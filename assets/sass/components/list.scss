@@ -7,7 +7,7 @@ main.post-list,
 
   // A post
   .post {
-    margin: 15px 0;
+    margin: 50px 0;
     // Header
     .post-header {
       position: relative;
@@ -24,37 +24,46 @@ main.post-list,
         background-repeat: no-repeat;
       }
 
+      time {
+        position: absolute;
+        top: 60px;
+        width: 50px;
+        text-align: center;
+        font-size: .8em;
+        color: #C85656;
+      }
+
       .post-title {
-        margin: 0 65px 10px;
+        margin: 0 0 10px 65px;
 
         a {
           font-family: 'PT Serif', serif;
           font-weight: 400;
-          font-size: 2em;
+          font-size: 2.7em;
           color: #E61F1F;
         }
       }
     }
 
-    // Meta info
-    .post-meta {
-      img.author {
-        width: 35px;
-        border-radius: 50%;
-        border: 2px solid #ddd;
-        display: inline;
-      }
-
-      .tags-time {
+    // Description
+    .post-excerpt {
+      .read-more {
+        display: inline-block;
+        padding-left: 2px;
+        font-size: .8em;
         position: relative;
-        top: -13px;
-        margin-left: 10px;
+        top: -1px;
+        color: #E61F1F;
       }
     }
 
     // Add images for tags
     &.tag-rails .post-header .post-tag {
       background-image: url(/assets/images/tag-rails.png);
+    }
+
+    &.tag-ruby .post-header .post-tag {
+      background-image: url(/assets/images/tag-ruby.png);
     }
   }
 }

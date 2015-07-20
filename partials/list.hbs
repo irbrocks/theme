@@ -3,21 +3,14 @@
 <article class="{{post_class}}">
   <div class="post-header">
     <div class="post-tag"></div>
+    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM"}}</time>
     <h2 class="post-title">
       <a class="post-link" href="{{url}}">{{{title}}}</a>
     </h2>
   </div>
   <section class="post-excerpt">
-    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+    <p>{{excerpt words="45"}}... <a class="read-more" href="{{url}}"> Read more +</a></p>
   </section>
-  <div class="post-meta">
-    {{#if author.image}}<img class="author" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
-    <span class="tags-time">
-      {{author}}
-      {{tags prefix=" on "}}
-      <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-    </span>
-  </div>
 </article>
 {{/foreach}}
 
