@@ -1,0 +1,30 @@
+/*
+ * Post styles
+ */
+
+main.post-content,
+.main.post-content {
+
+  .post {
+    // Header
+    .post-header {
+      margin: 50px 0;
+      text-align: center;
+
+      h1.post-title {
+        color: #E61F1F;
+        font-size: 5.5em;
+        font-family: 'PT Serif', serif;
+        font-weight: 400;
+        margin: 30px 0 15px;
+      }
+
+      .post-meta {
+
+        time {
+          color: #aaa;
+        }
+      }
+    }
+  }
+}

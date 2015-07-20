@@ -2,7 +2,10 @@
 {{#foreach posts}}
 <article class="{{post_class}}">
   <div class="post-header">
-    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+    <div class="post-tag"></div>
+    <h2 class="post-title">
+      <a class="post-link" href="{{url}}">{{{title}}}</a>
+    </h2>
   </div>
   <section class="post-excerpt">
     <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>

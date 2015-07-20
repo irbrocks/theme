@@ -22,31 +22,10 @@ body {
   clear: both; }
 
 /*
- * Post list on index
+ * Styles for the footer.
  */
-main .post,
-.main .post {
-  margin: 20px 0; }
-  main .post .post-header .post-title,
-  .main .post .post-header .post-title {
-    margin: 0 0 10px; }
-    main .post .post-header .post-title a,
-    .main .post .post-header .post-title a {
-      font-family: 'PT Serif', serif;
-      font-weight: 400;
-      font-size: 2em;
-      color: #E61F1F; }
-  main .post .post-meta img.author,
-  .main .post .post-meta img.author {
-    width: 35px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    display: inline; }
-  main .post .post-meta .tags-time,
-  .main .post .post-meta .tags-time {
-    position: relative;
-    top: -13px;
-    margin-left: 10px; }
+footer {
+  display: none; }
 
 /*
  * Styles for the header. Now it's content navigation and logo
@@ -92,7 +71,7 @@ header {
     margin-left: 10px; }
     header .blog-info .blog-title {
       font-size: 1.5em;
-      margin: 5px 0; }
+      margin: 0; }
     header .blog-info .blog-description {
       font-size: .8em;
       color: #999;
@@ -108,6 +87,84 @@ header {
       margin-right: 20px; }
       header ul.nav li:last-child {
         margin-right: 0; }
+
+/*
+ * Style for list on index
+ */
+main.post-list,
+.main.post-list {
+  margin: 30px 0; }
+  main.post-list .post,
+  .main.post-list .post {
+    margin: 15px 0; }
+    main.post-list .post .post-header,
+    .main.post-list .post .post-header {
+      position: relative; }
+      main.post-list .post .post-header .post-tag,
+      .main.post-list .post .post-header .post-tag {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #E75D5D;
+        top: 7px;
+        background-position: 50% 50%;
+        background-size: 40px 40px;
+        background-repeat: no-repeat; }
+      main.post-list .post .post-header .post-title,
+      .main.post-list .post .post-header .post-title {
+        margin: 0 65px 10px; }
+        main.post-list .post .post-header .post-title a,
+        .main.post-list .post .post-header .post-title a {
+          font-family: 'PT Serif', serif;
+          font-weight: 400;
+          font-size: 2em;
+          color: #E61F1F; }
+    main.post-list .post .post-meta img.author,
+    .main.post-list .post .post-meta img.author {
+      width: 35px;
+      border-radius: 50%;
+      border: 2px solid #ddd;
+      display: inline; }
+    main.post-list .post .post-meta .tags-time,
+    .main.post-list .post .post-meta .tags-time {
+      position: relative;
+      top: -13px;
+      margin-left: 10px; }
+    main.post-list .post.tag-rails .post-header .post-tag,
+    .main.post-list .post.tag-rails .post-header .post-tag {
+      background-image: url(/assets/images/tag-rails.png); }
+
+/*
+ * Style for pagination
+ */
+nav.pagination {
+  width: 100px;
+  padding: 15px 0;
+  margin: 10px auto;
+  font-size: .8em;
+  text-align: center;
+  color: #888;
+  border-top: 1px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB; }
+
+/*
+ * Post styles
+ */
+main.post-content .post .post-header,
+.main.post-content .post .post-header {
+  margin: 50px 0;
+  text-align: center; }
+  main.post-content .post .post-header h1.post-title,
+  .main.post-content .post .post-header h1.post-title {
+    color: #E61F1F;
+    font-size: 5.5em;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    margin: 30px 0 15px; }
+  main.post-content .post .post-header .post-meta time,
+  .main.post-content .post .post-header .post-meta time {
+    color: #aaa; }
 
 /*
  * Styles for texts. It's include paragraphs, anchors, text...
