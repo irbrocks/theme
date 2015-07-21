@@ -3,5 +3,43 @@
  */
 
 footer {
-  display: none;
+  position: relative;
+  height: 20px;
+  padding: 12px 0;
+  margin: 10px 0 50px;
+
+  a {
+    color: #717171;
+    transition: all ease-in .3s;
+
+    &:hover {
+      color: #E61F1F;
+    }
+  }
+
+  .credits {
+    float: left;
+    width: 50%;
+    font-size: .9em;
+    color: #888;
+  }
+
+  .social {
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: .9em;
+    color: #888;
+  }
+
+  .ruby-icon {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -13px;
+
+    img {
+      width: 36px;
+    }
+  }
 }
