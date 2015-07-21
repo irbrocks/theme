@@ -15,35 +15,9 @@
       {{content}}
     </section>
 
-    <div class="post-footer">
-
-      {{! Everything inside the #author tags pulls data from the author }}
-      {{#author}}
-
-      {{#if image}}
-      <figure class="author-image">
-        <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
-      </figure>
-      {{/if}}
-
-      <section class="author">
-        <h4><a href="{{url}}">{{name}}</a></h4>
-
-        {{#if bio}}
-        <p>{{bio}}</p>
-        {{else}}
-        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-        {{/if}}
-        <div class="author-meta">
-          {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-          {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-        </div>
-      </section>
-
-      {{/author}}
-
-      <section class="share">
-        <h4>Share this post</h4>
+    <section class="post-share">
+      <h4>gem share <span class="share-title">{{title}}</span>.gem</h4>
+      <div class="social">
         <a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
         onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <span class="hidden">Twitter</span>
@@ -52,13 +26,45 @@
         onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
         <span class="hidden">Facebook</span>
         </a>
-        <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+        <a class="icon-googleplus" href="https://plus.google.com/share?url={{url absolute="true"}}"
         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
         <span class="hidden">Google+</span>
-      </a>
+        </a>
+      </div>
+    </section>
+
+    <div class="post-footer">
+      {{! Everything inside the #author tags pulls data from the author }}
+      {{#author}}
+        <section class="post-author">
+          <p class="comment"># puts "This was an article of <a href="{{url}}">{{name}}</a>"</p>
+        </section>
+      {{/author}}
+      <p class="comment"># next</p>
+
+      <section class="post-other-articles clearfix">
+        {{#next_post}}
+          <div class="post-other">
+            <h2><a href="{{url}}">{{title}}</a> <time datetime="{{date format='YYYY-MM-DD'}}"><b>#</b> next</h2>
+          </div>
+        {{/next_post}}
+        {{#prev_post}}
+          <div class="post-other">
+            <h2><a href="{{url}}">{{title}}</a> <time datetime="{{date format='YYYY-MM-DD'}}"><b>#</b> previous</h2>
+          </div>
+        {{/prev_post}}
       </section>
+
     </div>
   </article>
 
   {{/post}}
 </main>
+
+<script type="text/javascript">
+// Update the name of the "gem" :P
+$(document).ready(function(){
+  var share = $('.share-title');
+  share.text(share.text().toLowerCase().replace(/\s/g, '_'));
+});
+</script>

@@ -15,11 +15,21 @@ body {
   margin: 0 auto;
 }
 
-.clearfix:after,
-.clearfix:before {
-  content: "\0020";
+// Helpers
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.clearfix:after {
+  content: "";
   height: 0;
   visibility: hidden;
+}
+
+.clearfix {
+  overflow: auto;
 }
 
 .clearfix:after {

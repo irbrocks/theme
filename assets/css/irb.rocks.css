@@ -12,11 +12,17 @@ body {
   max-width: 800px;
   margin: 0 auto; }
 
-.clearfix:after,
-.clearfix:before {
-  content: "\0020";
+.hidden {
+  visibility: hidden;
+  display: none; }
+
+.clearfix:after {
+  content: "";
   height: 0;
   visibility: hidden; }
+
+.clearfix {
+  overflow: auto; }
 
 .clearfix:after {
   clear: both; }
@@ -29,11 +35,6 @@ footer {
   height: 20px;
   padding: 12px 0;
   margin: 20px 0 50px; }
-  footer a {
-    color: #717171;
-    transition: all ease-in 0.3s; }
-    footer a:hover {
-      color: #E61F1F; }
   footer .credits {
     float: left;
     width: 50%;
@@ -125,15 +126,7 @@ main.post-list,
     margin: 50px 0; }
     main.post-list .post .post-header,
     .main.post-list .post .post-header {
-      position: relative;
-      /*time {
-        position: absolute;
-        top: 60px;
-        width: 50px;
-        text-align: center;
-        font-size: .8em;
-        color: #C85656;
-      }*/ }
+      position: relative; }
       main.post-list .post .post-header .post-tag,
       .main.post-list .post .post-header .post-tag {
         position: absolute;
@@ -206,8 +199,79 @@ main.post-content .post .post-header,
   .main.post-content .post .post-header .post-meta time {
     color: #aaa; }
 
+main.post-content .post .post-share,
+.main.post-content .post .post-share {
+  text-align: center;
+  color: #aaa;
+  margin: 45px 0 25px; }
+  main.post-content .post .post-share h4,
+  .main.post-content .post .post-share h4 {
+    margin: 0 0 10px; }
+  main.post-content .post .post-share .social a,
+  .main.post-content .post .post-share .social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in; }
+    main.post-content .post .post-share .social a:first-child,
+    .main.post-content .post .post-share .social a:first-child {
+      margin-left: 0; }
+    main.post-content .post .post-share .social a:hover,
+    .main.post-content .post .post-share .social a:hover {
+      background-color: #E75D5D; }
+    main.post-content .post .post-share .social a.icon-twitter,
+    .main.post-content .post .post-share .social a.icon-twitter {
+      background-image: url(/assets/images/twitter.png); }
+    main.post-content .post .post-share .social a.icon-facebook,
+    .main.post-content .post .post-share .social a.icon-facebook {
+      background-image: url(/assets/images/facebook.png); }
+    main.post-content .post .post-share .social a.icon-googleplus,
+    .main.post-content .post .post-share .social a.icon-googleplus {
+      background-image: url(/assets/images/googleplus.png); }
+
+main.post-content .post .post-footer,
+.main.post-content .post .post-footer {
+  margin-top: 20px;
+  padding-top: 10px; }
+  main.post-content .post .post-footer p.comment,
+  .main.post-content .post .post-footer p.comment {
+    margin: 5px 0;
+    font-size: 1.4em;
+    color: #aaa; }
+  main.post-content .post .post-footer .post-other-articles,
+  .main.post-content .post .post-footer .post-other-articles {
+    margin: 25px 0; }
+    main.post-content .post .post-footer .post-other-articles .post-other,
+    .main.post-content .post .post-footer .post-other-articles .post-other {
+      text-align: center; }
+      main.post-content .post .post-footer .post-other-articles .post-other a,
+      .main.post-content .post .post-footer .post-other-articles .post-other a {
+        font-family: 'PT Serif', serif;
+        font-weight: 400;
+        font-size: 2em;
+        color: #E61F1F; }
+      main.post-content .post .post-footer .post-other-articles .post-other time,
+      .main.post-content .post .post-footer .post-other-articles .post-other time {
+        display: inline-block;
+        margin-left: 5px;
+        font-size: .8em;
+        font-weight: 300;
+        color: #aaa;
+        position: relative;
+        top: -5px; }
+
 /*
  * Styles for texts. It's include paragraphs, anchors, text...
  */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #5A5A5A;
+  transition: all ease-in 0.3s; }
+  a:hover {
+    color: #E61F1F; }

@@ -20,9 +20,90 @@ main.post-content,
       }
 
       .post-meta {
-
         time {
           color: #aaa;
+        }
+      }
+    }
+
+    .post-share {
+      text-align: center;
+      color: #aaa;
+      margin: 45px 0 25px;
+
+      h4 {
+        margin: 0 0 10px
+      }
+
+      .social {
+        a {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          margin-left: 10px;
+          background-color: #d4d4d4;
+          border-radius: 50%;
+          background-position: 50% 50%;
+          background-size: 26px 26px;
+          background-repeat: no-repeat;
+          transition: all .3s ease-in;
+         
+          &:first-child {
+            margin-left: 0;
+          }
+
+          &:hover {
+            background-color: #E75D5D;
+          }
+
+          // icons
+          &.icon-twitter {
+            background-image: url(/assets/images/twitter.png);
+          }
+          &.icon-facebook {
+            background-image: url(/assets/images/facebook.png);
+          }
+          &.icon-googleplus {
+            background-image: url(/assets/images/googleplus.png);
+          }
+        }
+      }
+    }
+
+    // Footer
+    .post-footer {
+      margin-top: 20px;
+      padding-top: 10px;
+      //border-top: 1px solid #DBDBDB;
+
+      p.comment {
+        margin: 5px 0;
+        font-size: 1.4em;
+        color: #aaa;
+      }
+
+      .post-other-articles {
+        margin: 25px 0;
+
+        .post-other {
+          text-align: center;
+
+          a {
+            font-family: 'PT Serif', serif;
+            font-weight: 400;
+            font-size: 2em;
+            color: #E61F1F;
+          }
+
+          time {
+            display: inline-block;
+            margin-left: 5px;
+            font-size: .8em;
+            font-weight: 300;
+            color: #aaa;
+            position: relative;
+            top: -5px;
+          }
         }
       }
     }
