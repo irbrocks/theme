@@ -57,6 +57,10 @@ header {
     .blog-title {
       font-size: 1.5em;
       margin: 0;
+
+      a, a:hover {
+        color: #444;
+      }
     }
 
     .blog-description {
