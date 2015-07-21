@@ -28,7 +28,7 @@ footer {
   position: relative;
   height: 20px;
   padding: 12px 0;
-  margin: 10px 0 50px; }
+  margin: 20px 0 50px; }
   footer a {
     color: #717171;
     transition: all ease-in 0.3s; }
@@ -125,7 +125,15 @@ main.post-list,
     margin: 50px 0; }
     main.post-list .post .post-header,
     .main.post-list .post .post-header {
-      position: relative; }
+      position: relative;
+      /*time {
+        position: absolute;
+        top: 60px;
+        width: 50px;
+        text-align: center;
+        font-size: .8em;
+        color: #C85656;
+      }*/ }
       main.post-list .post .post-header .post-tag,
       .main.post-list .post .post-header .post-tag {
         position: absolute;
@@ -139,12 +147,13 @@ main.post-list,
         background-repeat: no-repeat; }
       main.post-list .post .post-header time,
       .main.post-list .post .post-header time {
-        position: absolute;
-        top: 60px;
-        width: 50px;
-        text-align: center;
+        display: inline-block;
+        margin-left: 5px;
         font-size: .8em;
-        color: #C85656; }
+        font-weight: 300;
+        color: #aaa;
+        position: relative;
+        top: -5px; }
       main.post-list .post .post-header .post-title,
       .main.post-list .post .post-header .post-title {
         margin: 0 0 10px 65px; }
@@ -152,15 +161,13 @@ main.post-list,
         .main.post-list .post .post-header .post-title a {
           font-family: 'PT Serif', serif;
           font-weight: 400;
-          font-size: 2.7em;
+          font-size: 2em;
           color: #E61F1F; }
     main.post-list .post .post-excerpt .read-more,
     .main.post-list .post .post-excerpt .read-more {
       display: inline-block;
       padding-left: 2px;
-      font-size: .8em;
-      position: relative;
-      top: -1px;
+      font-size: .9em;
       color: #E61F1F; }
     main.post-list .post.tag-rails .post-header .post-tag,
     .main.post-list .post.tag-rails .post-header .post-tag {

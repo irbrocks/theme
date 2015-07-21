@@ -24,13 +24,23 @@ main.post-list,
         background-repeat: no-repeat;
       }
 
-      time {
+      /*time {
         position: absolute;
         top: 60px;
         width: 50px;
         text-align: center;
         font-size: .8em;
         color: #C85656;
+      }*/
+
+      time {
+        display: inline-block;
+        margin-left: 5px;
+        font-size: .8em;
+        font-weight: 300;
+        color: #aaa;
+        position: relative;
+        top: -5px;
       }
 
       .post-title {
@@ -39,7 +49,7 @@ main.post-list,
         a {
           font-family: 'PT Serif', serif;
           font-weight: 400;
-          font-size: 2.7em;
+          font-size: 2em;
           color: #E61F1F;
         }
       }
@@ -50,9 +60,7 @@ main.post-list,
       .read-more {
         display: inline-block;
         padding-left: 2px;
-        font-size: .8em;
-        position: relative;
-        top: -1px;
+        font-size: .9em;
         color: #E61F1F;
       }
     }
