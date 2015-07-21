@@ -12,3 +12,12 @@ a {
     color: #E61F1F;
   }
 }
+
+// Quotes
+blockquote {
+  border-left: 5px solid #ddd;
+  margin-left: 0;
+  padding-left: 50px;
+  font-style: italic;
+  color: #545454;
+}

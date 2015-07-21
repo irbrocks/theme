@@ -71,7 +71,7 @@ header {
   height: 60px;
   margin: 10px auto;
   padding: 12px 15px;
-  border-bottom: 1px solid #D1B4B4; }
+  border-bottom: 1px solid #E5E5E5; }
   header .blog-logo {
     position: relative;
     float: left; }
@@ -199,6 +199,60 @@ main.post-content .post .post-header,
   .main.post-content .post .post-header .post-meta time {
     color: #aaa; }
 
+main.post-content .post .post-content p,
+.main.post-content .post .post-content p {
+  font-size: 1.1em;
+  line-height: 1.65em;
+  margin-bottom: 25px; }
+  main.post-content .post .post-content p code,
+  .main.post-content .post .post-content p code {
+    background-color: #EAEAEA;
+    padding: 2px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd; }
+
+main.post-content .post .post-content h1,
+main.post-content .post .post-content h2,
+main.post-content .post .post-content h3,
+main.post-content .post .post-content h4,
+main.post-content .post .post-content h5,
+main.post-content .post .post-content h6,
+.main.post-content .post .post-content h1, .main.post-content .post .post-content h2, .main.post-content .post .post-content h3, .main.post-content .post .post-content h4, .main.post-content .post .post-content h5, .main.post-content .post .post-content h6 {
+  color: #E61F1F;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  margin-top: 1.3em;
+  margin-bottom: 0.5em; }
+
+main.post-content .post .post-content h1,
+.main.post-content .post .post-content h1 {
+  font-size: 2em; }
+
+main.post-content .post .post-content h2,
+.main.post-content .post .post-content h2 {
+  font-size: 1.7em; }
+
+main.post-content .post .post-content h3,
+.main.post-content .post .post-content h3 {
+  font-size: 1.5em; }
+
+main.post-content .post .post-content h4,
+.main.post-content .post .post-content h4 {
+  font-size: 1.3em; }
+
+main.post-content .post .post-content h5,
+.main.post-content .post .post-content h5 {
+  font-size: 1.2em; }
+
+main.post-content .post .post-content h6,
+.main.post-content .post .post-content h6 {
+  font-size: 1.1em; }
+
+main.post-content .post .post-content pre code,
+.main.post-content .post .post-content pre code {
+  padding: 15px;
+  border-radius: 5px; }
+
 main.post-content .post .post-share,
 .main.post-content .post .post-share {
   text-align: center;
@@ -275,3 +329,10 @@ a {
   transition: all ease-in 0.3s; }
   a:hover {
     color: #E61F1F; }
+
+blockquote {
+  border-left: 5px solid #ddd;
+  margin-left: 0;
+  padding-left: 50px;
+  font-style: italic;
+  color: #545454; }

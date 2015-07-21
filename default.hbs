@@ -20,11 +20,13 @@
   <link rel="stylesheet" type="text/css" href="{{asset "css/opalbox.min.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/all_themes.min.css"}}" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,700,400|PT+Serif" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/zenburn.css"}}" />
 
   {{! Scripts }}
   <script type="text/javascript" src="http://cdn.opalrb.org/opal/current/opal.min.js"></script>
   <script type="text/javascript" src="http://cdn.opalrb.org/opal/current/opal-parser.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="{{asset "js/highlight.pack.js"}}"></script>
 
   {{! Ghost outputs important style and meta data with this tag }}
   {{ghost_head}}
@@ -63,5 +65,6 @@
   {{! The main JavaScript file }}
   <script type="text/javascript" src="{{asset "js/opalbox.jquery.min.js"}}"></script>
   <script type="text/javascript" src="{{asset "js/irb.rocks.js"}}"></script>
+  <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

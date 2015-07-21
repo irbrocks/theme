@@ -3,7 +3,6 @@
  */
 
 $(document).ready(function(){
-
   // Future
   /*$('.post-link').click(function(e){
     var el = $(this);
