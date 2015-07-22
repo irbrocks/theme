@@ -212,6 +212,10 @@ main.post-content .post .post-header,
     font-family: 'PT Serif', serif;
     font-weight: 400;
     margin: 30px 0 15px; }
+    @media screen and (max-width: 600px) {
+      main.post-content .post .post-header h1.post-title,
+      .main.post-content .post .post-header h1.post-title {
+        font-size: 3em; } }
   main.post-content .post .post-header .post-meta time,
   .main.post-content .post .post-header .post-meta time {
     color: #aaa; }
@@ -231,6 +235,26 @@ main.post-content .post .post-content p,
     padding: 2px 10px;
     border-radius: 5px;
     border: 1px solid #ddd; }
+
+main.post-content .post .post-content a,
+.main.post-content .post .post-content a {
+  color: #E61F1F; }
+  main.post-content .post .post-content a:hover,
+  .main.post-content .post .post-content a:hover {
+    border-bottom: 1px solid #E61F1F;
+    padding-bottom: 2px; }
+
+main.post-content .post .post-content ul,
+.main.post-content .post .post-content ul {
+  padding-left: 35px; }
+  main.post-content .post .post-content ul li,
+  .main.post-content .post .post-content ul li {
+    margin-bottom: 5px;
+    font-size: 1.1em; }
+    @media screen and (max-width: 600px) {
+      main.post-content .post .post-content ul li,
+      .main.post-content .post .post-content ul li {
+        font-size: 1.2em; } }
 
 main.post-content .post .post-content h1,
 main.post-content .post .post-content h2,
@@ -351,7 +375,7 @@ main.post-content .post .post-footer,
 a {
   text-decoration: none;
   color: #5A5A5A;
-  transition: all ease-in 0.3s; }
+  transition: color ease-in 0.3s; }
   a:hover {
     color: #E61F1F; }
 
