@@ -33,4 +33,30 @@ footer {
       width: 36px;
     }
   }
+
+  // Responsive footer
+  @media screen and (max-width: 600px){
+    // Center all elements
+    text-align: center;
+
+    .credits,
+    .social {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    .credits {
+      margin-bottom: 7px;
+    }
+
+    .social {
+      margin-bottom: 30px;
+    }
+
+    .ruby-icon {
+      position: static;
+      margin: 0 0 7px 0;
+    }
+  }
 }

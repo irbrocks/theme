@@ -54,6 +54,21 @@ footer {
     margin-left: -13px; }
     footer .ruby-icon img {
       width: 36px; }
+  @media screen and (max-width: 600px) {
+    footer {
+      text-align: center; }
+      footer .credits,
+      footer .social {
+        float: none;
+        width: 100%;
+        text-align: center; }
+      footer .credits {
+        margin-bottom: 7px; }
+      footer .social {
+        margin-bottom: 30px; }
+      footer .ruby-icon {
+        position: static;
+        margin: 0 0 7px 0; } }
 
 /*
  * Styles for the header. Now it's content navigation and logo
@@ -207,6 +222,10 @@ main.post-content .post .post-content p,
   font-size: 1.1em;
   line-height: 1.65em;
   margin-bottom: 25px; }
+  @media screen and (max-width: 600px) {
+    main.post-content .post .post-content p,
+    .main.post-content .post .post-content p {
+      font-size: 1.2em; } }
   main.post-content .post .post-content p code,
   .main.post-content .post .post-content p code {
     background-color: #EAEAEA;
@@ -301,6 +320,10 @@ main.post-content .post .post-footer,
     margin: 5px 0;
     font-size: 1.4em;
     color: #aaa; }
+    @media screen and (max-width: 600px) {
+      main.post-content .post .post-footer p.comment,
+      .main.post-content .post .post-footer p.comment {
+        font-size: 1.2em; } }
   main.post-content .post .post-footer .post-other-articles,
   .main.post-content .post .post-footer .post-other-articles {
     margin: 25px 0; }

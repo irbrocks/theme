@@ -32,6 +32,10 @@ main.post-content,
         line-height: 1.65em;
         margin-bottom: 25px;
 
+        @media screen and (max-width: 600px){
+          font-size: 1.2em;
+        }
+
         code {
           background-color: #EAEAEA;
           padding: 2px 10px;
@@ -137,6 +141,10 @@ main.post-content,
         margin: 5px 0;
         font-size: 1.4em;
         color: #aaa;
+
+        @media screen and (max-width: 600px){
+          font-size: 1.2em;
+        }
       }
 
       .post-other-articles {
