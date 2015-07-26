@@ -1,6 +1,17 @@
 {
   "name": "irb.rocks",
-  "version": "0.0.1",
+  "description": "Ghost theme used on irb.rocks",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/irbrocks/theme.git"
+  },
+  "author": "Angel M Miguel (angel@laux.es)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irbrocks/theme/issues"
+  },
+  "homepage": "http://irb.rocks",
   "devDependencies": {
     "gulp-sass": "^2.0.2",
     "gulp-concat": "^2.6.0"
