@@ -7,9 +7,9 @@ To work with IRB Rocks! theme you will need to install [NodeJS](https://nodejs.o
 
 After install base dependencies, clone the repository and run `npm install` to download development dependencies:
 
-  git clone https://github.com/irbrocks/theme.git
-  cd theme
-  npm install
+	git clone https://github.com/irbrocks/theme.git
+	cd theme
+	npm install
 
 All changes must be performed on `assets/sass`, because `assets/css` folder are generated automatically with Gulp.
 
