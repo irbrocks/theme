@@ -236,6 +236,20 @@ main.post-content .post .post-content p,
     border-radius: 5px;
     border: 1px solid #ddd; }
 
+main.post-content .post .post-content img,
+.main.post-content .post .post-content img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%; }
+
+main.post-content .post .post-content p.image-footer,
+.main.post-content .post .post-content p.image-footer {
+  text-align: center;
+  color: #888;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  margin-top: -10px; }
+
 main.post-content .post .post-content a,
 .main.post-content .post .post-content a {
   color: #E61F1F; }
@@ -271,19 +285,19 @@ main.post-content .post .post-content h6,
 
 main.post-content .post .post-content h1,
 .main.post-content .post .post-content h1 {
-  font-size: 2em; }
+  font-size: 2.5em; }
 
 main.post-content .post .post-content h2,
 .main.post-content .post .post-content h2 {
-  font-size: 1.7em; }
+  font-size: 2em; }
 
 main.post-content .post .post-content h3,
 .main.post-content .post .post-content h3 {
-  font-size: 1.5em; }
+  font-size: 1.7em; }
 
 main.post-content .post .post-content h4,
 .main.post-content .post .post-content h4 {
-  font-size: 1.3em; }
+  font-size: 1.5em; }
 
 main.post-content .post .post-content h5,
 .main.post-content .post .post-content h5 {
