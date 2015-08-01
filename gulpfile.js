@@ -10,7 +10,7 @@ gulp.task('default', function() {
 });
 
 // Compile sass files
-gulp.task('sass', function () {
+gulp.task('sass', ['sass:production'],function () {
   gulp.src('./assets/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('irb.rocks.css'))
