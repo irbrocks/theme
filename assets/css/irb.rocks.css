@@ -312,6 +312,13 @@ main.post-content .post .post-content pre code,
   padding: 15px;
   border-radius: 5px; }
 
+main.post-content .post .post-content ul li code,
+.main.post-content .post .post-content ul li code {
+  background-color: #EEEEEE;
+  border-radius: 3px;
+  padding: 0px 3px;
+  border: 1px solid #d9d9d9; }
+
 main.post-content .post .post-share,
 .main.post-content .post .post-share {
   text-align: center;
