@@ -1,0 +1,14 @@
+{{!< default}}
+
+<main id="content" class="content tag-page post-list" role="main">
+  {{! Tag info}}
+  <section class="tag-info">  
+    {{#tag}}
+      <h1>{{ name }}</h1>
+      <p class="tag-description">{{ description }}</p>
+    {{/tag}}
+  </section>
+  <h2 class="tag-articles">Articles</h2>
+  {{! Include posts }}
+  {{> "list"}}
+</main>
