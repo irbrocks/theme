@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 
 // Default task to see sass
-gulp.task('default', function() {
+gulp.task('default', ['sass'], function() {
   gulp.start('sass:watch');
 });
 
