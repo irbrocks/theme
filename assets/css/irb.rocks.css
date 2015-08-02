@@ -216,8 +216,8 @@ main.post-content .post .post-header,
       main.post-content .post .post-header h1.post-title,
       .main.post-content .post .post-header h1.post-title {
         font-size: 3em; } }
-  main.post-content .post .post-header .post-meta time,
-  .main.post-content .post .post-header .post-meta time {
+  main.post-content .post .post-header .post-meta,
+  .main.post-content .post .post-header .post-meta {
     color: #aaa; }
 
 main.post-content .post .post-content p,
