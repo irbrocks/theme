@@ -391,6 +391,40 @@ main.post-content .post .post-footer,
         top: -5px; }
 
 /*
+ * Style for tag-page
+ */
+main.tag-page .tag-info,
+.main.tag-page .tag-info {
+  max-width: 600px;
+  padding: 0 20px;
+  margin: 10px auto; }
+  main.tag-page .tag-info h1,
+  .main.tag-page .tag-info h1 {
+    color: #E61F1F;
+    font-size: 5.5em;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0 5px; }
+  main.tag-page .tag-info p.tag-description,
+  .main.tag-page .tag-info p.tag-description {
+    color: #888;
+    font-size: 1.3em;
+    margin-bottom: 50px; }
+
+main.tag-page .tag-articles,
+.main.tag-page .tag-articles {
+  color: #E61F1F;
+  font-size: 1.5em;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  padding: 15px 0;
+  text-align: center;
+  margin: 30px 0;
+  border-bottom: 1px solid #E5E5E5;
+  border-top: 1px solid #E5E5E5; }
+
+/*
  * Styles for texts. It's include paragraphs, anchors, text...
  */
 a {
