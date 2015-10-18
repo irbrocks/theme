@@ -28,6 +28,82 @@ body {
 .clearfix:after {
   clear: both; }
 
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*
+ * Style for tag-page
+ */
+main.author-page .author-info,
+.main.author-page .author-info {
+  max-width: 600px;
+  padding: 0 5px;
+  margin: 10px auto; }
+  main.author-page .author-info .author-description,
+  .main.author-page .author-info .author-description {
+    color: #888;
+    padding: 10px;
+    background-color: #002833;
+    border-radius: 5px;
+    margin: 15px 0 50px;
+    color: #839496; }
+    main.author-page .author-info .author-description .output,
+    .main.author-page .author-info .author-description .output {
+      display: none;
+      margin-top: 20px; }
+      main.author-page .author-info .author-description .output img,
+      .main.author-page .author-info .author-description .output img {
+        border: 2px solid #0B2127;
+        width: 150px;
+        border-radius: 50%; }
+      main.author-page .author-info .author-description .output h1,
+      .main.author-page .author-info .author-description .output h1 {
+        font-size: 1.8em;
+        color: #859901; }
+      main.author-page .author-info .author-description .output p.author-bio,
+      .main.author-page .author-info .author-description .output p.author-bio {
+        color: #ddd; }
+        main.author-page .author-info .author-description .output p.author-bio a,
+        .main.author-page .author-info .author-description .output p.author-bio a {
+          color: #2AA198; }
+      main.author-page .author-info .author-description .output p,
+      main.author-page .author-info .author-description .output h1,
+      .main.author-page .author-info .author-description .output p, .main.author-page .author-info .author-description .output h1 {
+        margin: 0 0 5px; }
+    main.author-page .author-info .author-description .execution,
+    .main.author-page .author-info .author-description .execution {
+      font-weight: 300; }
+      main.author-page .author-info .author-description .execution .console,
+      .main.author-page .author-info .author-description .execution .console {
+        font-weight: 500; }
+
 /*
  * Styles for the footer.
  */

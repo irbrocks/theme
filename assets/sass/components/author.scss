@@ -1,0 +1,60 @@
+/*
+ * Style for tag-page
+ */
+
+main.author-page,
+.main.author-page {
+
+  .author-info {
+    max-width: 600px;
+    padding: 0 5px;
+    margin: 10px auto;
+
+    .author-description {
+      color: #888;
+      padding: 10px;
+      background-color: #002833;
+      border-radius: 5px;
+      margin: 15px 0 50px;
+      color: #839496;
+
+      .output {
+        display: none;
+        margin-top: 20px;
+
+        img {
+          border: 2px solid #0B2127;
+          width: 150px;
+          border-radius: 50%;
+        }
+
+        h1 {
+          font-size: 1.8em;
+          color: #859901;
+        }
+
+        p.author-bio {
+          color: #ddd;
+
+          a {
+            color: #2AA198;
+          }
+        }
+
+        p, h1 {
+          margin: 0 0 5px;
+
+        }
+      }
+
+      .execution {
+        font-weight: 300;
+
+        .console {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+}
