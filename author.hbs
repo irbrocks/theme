@@ -31,7 +31,7 @@
       var name_final = name.substring(name.length - 4)
       var shuffled = name_final.split('').sort(function(){return 0.5-Math.random()}).join('');
 
-      $('.author-bio').html($('.author-bio').text().replace(/@(\w+)/g, "<a href='https://twitter.com/$1'>@$1</a>"));
+      $('.author-bio').html($('.author-bio').text().replace(/@(\w+)/g, "<a target='_blank' href='https://twitter.com/$1'>@$1</a>"));
 
       $(".type").typed({
         strings: ["ruby load_author.rb " + name_base + shuffled, "ruby load_author.rb " + name],
