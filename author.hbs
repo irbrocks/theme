@@ -1,0 +1,44 @@
+{{!< default}}
+
+<main id="content" class="content author-page tag-page post-list" role="main">
+  {{! Tag info}}
+  <section class="author-info">  
+    {{#author}}
+      <div class="author-description">
+        <div class="execution">
+          <span class="console">bash-3.2$ > </span><span class="type" data-name="{{ name }}"></span>
+        </div>
+        <div class="output">
+          <div style="text-align: center">
+            <img src="{{ image }}" alt="{{ name }}'s avatar"/>
+          </div>
+          <h1>{{ name }}</h1>
+          <p class="author-bio">{{ bio }}</p>
+        </div>
+      </div>
+    {{/author}}
+  </section>
+  <h2 class="tag-articles">Articles</h2>
+  {{! Include posts }}
+  {{> "list"}}
+</main>
+
+<script type="text/javascript">
+  $(function(){
+      // Get the name
+      var name = $('.type').data('name').toLowerCase().replace(' ', '_');
+      var name_base = name.substring(0, name.length - 4);
+      var name_final = name.substring(name.length - 4)
+      var shuffled = name_final.split('').sort(function(){return 0.5-Math.random()}).join('');
+
+      $('.author-bio').html($('.author-bio').text().replace(/@(\w+)/g, "<a href='https://twitter.com/$1'>@$1</a>"));
+
+      $(".type").typed({
+        strings: ["ruby load_author.rb " + name_base + shuffled, "ruby load_author.rb " + name],
+        typeSpeed: 45,
+        callback: function() {
+          $('.output').fadeIn(100);
+        }
+      });
+  });
+</script>
