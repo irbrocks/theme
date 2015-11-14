@@ -12,7 +12,9 @@
     </div>
 
     <section class="post-content">
-      <p><img src="{{image}}" alt="Post image"/></p>
+      {{#if image}}
+        <p><img src="{{image}}" alt="Post image"/></p>
+      {{/if}}
       {{content}}
     </section>
 
