@@ -140,7 +140,8 @@ main.post-content,
       margin: 45px 0 25px;
 
       h4 {
-        margin: 0 0 10px
+        margin: 0 0 10px;
+        word-break: break-word;
       }
 
       .social {
@@ -155,7 +156,7 @@ main.post-content,
           background-size: 26px 26px;
           background-repeat: no-repeat;
           transition: all .3s ease-in;
-         
+
           &:first-child {
             margin-left: 0;
           }

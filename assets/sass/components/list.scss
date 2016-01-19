@@ -12,16 +12,37 @@ main.post-list,
     .post-header {
       position: relative;
 
+      // Responsive
+      @media screen and (max-width: 480px){
+        padding-top: 50px;
+
+        .post-tag {
+          width: 40px;
+          height: 40px;
+          background-size: 30px 30px;
+          top: 5px;
+          left: 50%;
+          margin-left: -20px;
+        }
+
+        .post-title {
+          margin: 0 10px 10px 10px !important;
+        }
+      }
+
       .post-tag {
         position: absolute;
-        width: 50px;
-        height: 50px;
+        background-repeat: no-repeat;
         border-radius: 50%;
         background-color: #E75D5D;
         top: 7px;
         background-position: 50% 50%;
-        background-size: 40px 40px;
-        background-repeat: no-repeat;
+
+        @media screen and (min-width: 481px){
+          width: 50px;
+          height: 50px;
+          background-size: 40px 40px;
+        }
       }
 
       time {
@@ -35,7 +56,11 @@ main.post-list,
       }
 
       .post-title {
-        margin: 0 0 10px 65px;
+        word-break: break-word;
+
+        @media screen and (min-width: 481px){
+          margin: 0 0 10px 65px;
+        }
 
         a {
           font-family: 'PT Serif', serif;
@@ -63,6 +88,14 @@ main.post-list,
 
     &.tag-ruby .post-header .post-tag {
       background-image: url(/assets/images/tag-ruby.png);
+    }
+
+    &.tag-git .post-header .post-tag {
+      background-image: url(/assets/images/tag-git.png);
+    }
+
+    &.tag-shell .post-header .post-tag {
+      background-image: url(/assets/images/tag-shell.png);
     }
   }
 }

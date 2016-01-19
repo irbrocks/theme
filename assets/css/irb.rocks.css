@@ -220,17 +220,35 @@ main.post-list,
     main.post-list .post .post-header,
     .main.post-list .post .post-header {
       position: relative; }
+      @media screen and (max-width: 480px) {
+        main.post-list .post .post-header,
+        .main.post-list .post .post-header {
+          padding-top: 50px; }
+          main.post-list .post .post-header .post-tag,
+          .main.post-list .post .post-header .post-tag {
+            width: 40px;
+            height: 40px;
+            background-size: 30px 30px;
+            top: 5px;
+            left: 50%;
+            margin-left: -20px; }
+          main.post-list .post .post-header .post-title,
+          .main.post-list .post .post-header .post-title {
+            margin: 0 10px 10px 10px !important; } }
       main.post-list .post .post-header .post-tag,
       .main.post-list .post .post-header .post-tag {
         position: absolute;
-        width: 50px;
-        height: 50px;
+        background-repeat: no-repeat;
         border-radius: 50%;
         background-color: #E75D5D;
         top: 7px;
-        background-position: 50% 50%;
-        background-size: 40px 40px;
-        background-repeat: no-repeat; }
+        background-position: 50% 50%; }
+        @media screen and (min-width: 481px) {
+          main.post-list .post .post-header .post-tag,
+          .main.post-list .post .post-header .post-tag {
+            width: 50px;
+            height: 50px;
+            background-size: 40px 40px; } }
       main.post-list .post .post-header time,
       .main.post-list .post .post-header time {
         display: inline-block;
@@ -242,7 +260,11 @@ main.post-list,
         top: -5px; }
       main.post-list .post .post-header .post-title,
       .main.post-list .post .post-header .post-title {
-        margin: 0 0 10px 65px; }
+        word-break: break-word; }
+        @media screen and (min-width: 481px) {
+          main.post-list .post .post-header .post-title,
+          .main.post-list .post .post-header .post-title {
+            margin: 0 0 10px 65px; } }
         main.post-list .post .post-header .post-title a,
         .main.post-list .post .post-header .post-title a {
           font-family: 'PT Serif', serif;
@@ -261,6 +283,12 @@ main.post-list,
     main.post-list .post.tag-ruby .post-header .post-tag,
     .main.post-list .post.tag-ruby .post-header .post-tag {
       background-image: url(/assets/images/tag-ruby.png); }
+    main.post-list .post.tag-git .post-header .post-tag,
+    .main.post-list .post.tag-git .post-header .post-tag {
+      background-image: url(/assets/images/tag-git.png); }
+    main.post-list .post.tag-shell .post-header .post-tag,
+    .main.post-list .post.tag-shell .post-header .post-tag {
+      background-image: url(/assets/images/tag-shell.png); }
 
 /*
  * Style for pagination
@@ -402,7 +430,8 @@ main.post-content .post .post-share,
   margin: 45px 0 25px; }
   main.post-content .post .post-share h4,
   .main.post-content .post .post-share h4 {
-    margin: 0 0 10px; }
+    margin: 0 0 10px;
+    word-break: break-word; }
   main.post-content .post .post-share .social a,
   .main.post-content .post .post-share .social a {
     display: inline-block;
