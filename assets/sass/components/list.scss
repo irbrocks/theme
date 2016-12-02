@@ -97,5 +97,17 @@ main.post-list,
     &.tag-shell .post-header .post-tag {
       background-image: url(/assets/images/tag-shell.png);
     }
+
+    &.tag-javascript .post-header .post-tag {
+      background-image: url(/assets/images/tag-javascript.png);
+    }
+
+    &.tag-react .post-header .post-tag {
+      background-image: url(/assets/images/tag-react.png);
+    }
+
+    &.tag-webpack .post-header .post-tag {
+      background-image: url(/assets/images/tag-webpack.png);
+    }
   }
 }

@@ -93,9 +93,9 @@ main.author-page .author-info,
         main.author-page .author-info .author-description .output p.author-bio a,
         .main.author-page .author-info .author-description .output p.author-bio a {
           color: #2AA198; }
-      main.author-page .author-info .author-description .output p,
-      main.author-page .author-info .author-description .output h1,
-      .main.author-page .author-info .author-description .output p, .main.author-page .author-info .author-description .output h1 {
+      main.author-page .author-info .author-description .output p, main.author-page .author-info .author-description .output h1,
+      .main.author-page .author-info .author-description .output p,
+      .main.author-page .author-info .author-description .output h1 {
         margin: 0 0 5px; }
     main.author-page .author-info .author-description .execution,
     .main.author-page .author-info .author-description .execution {
@@ -181,7 +181,7 @@ header {
       left: inherit; }
     header .blog-logo img {
       width: 70px;
-      transition: all 0.3s; }
+      transition: all .3s; }
       header .blog-logo img:hover {
         transform: rotateY(180deg); }
   header .blog-info {
@@ -289,6 +289,15 @@ main.post-list,
     main.post-list .post.tag-shell .post-header .post-tag,
     .main.post-list .post.tag-shell .post-header .post-tag {
       background-image: url(/assets/images/tag-shell.png); }
+    main.post-list .post.tag-javascript .post-header .post-tag,
+    .main.post-list .post.tag-javascript .post-header .post-tag {
+      background-image: url(/assets/images/tag-javascript.png); }
+    main.post-list .post.tag-react .post-header .post-tag,
+    .main.post-list .post.tag-react .post-header .post-tag {
+      background-image: url(/assets/images/tag-react.png); }
+    main.post-list .post.tag-webpack .post-header .post-tag,
+    .main.post-list .post.tag-webpack .post-header .post-tag {
+      background-image: url(/assets/images/tag-webpack.png); }
 
 /*
  * Style for pagination
@@ -374,13 +383,13 @@ main.post-content .post .post-content ul,
       .main.post-content .post .post-content ul li {
         font-size: 1.2em; } }
 
-main.post-content .post .post-content h1,
-main.post-content .post .post-content h2,
-main.post-content .post .post-content h3,
-main.post-content .post .post-content h4,
-main.post-content .post .post-content h5,
-main.post-content .post .post-content h6,
-.main.post-content .post .post-content h1, .main.post-content .post .post-content h2, .main.post-content .post .post-content h3, .main.post-content .post .post-content h4, .main.post-content .post .post-content h5, .main.post-content .post .post-content h6 {
+main.post-content .post .post-content h1, main.post-content .post .post-content h2, main.post-content .post .post-content h3, main.post-content .post .post-content h4, main.post-content .post .post-content h5, main.post-content .post .post-content h6,
+.main.post-content .post .post-content h1,
+.main.post-content .post .post-content h2,
+.main.post-content .post .post-content h3,
+.main.post-content .post .post-content h4,
+.main.post-content .post .post-content h5,
+.main.post-content .post .post-content h6 {
   color: #E61F1F;
   font-family: 'PT Serif', serif;
   font-weight: 400;
@@ -443,7 +452,7 @@ main.post-content .post .post-share,
     background-position: 50% 50%;
     background-size: 26px 26px;
     background-repeat: no-repeat;
-    transition: all 0.3s ease-in; }
+    transition: all .3s ease-in; }
     main.post-content .post .post-share .social a:first-child,
     .main.post-content .post .post-share .social a:first-child {
       margin-left: 0; }
@@ -535,7 +544,7 @@ main.tag-page .tag-articles,
 a {
   text-decoration: none;
   color: #5A5A5A;
-  transition: color ease-in 0.3s; }
+  transition: color ease-in .3s; }
   a:hover {
     color: #E61F1F; }
 
