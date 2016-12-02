@@ -2,6 +2,9 @@
   "name": "irb.rocks",
   "description": "Ghost theme used on irb.rocks",
   "version": "1.0.0",
+  "scripts": {
+    "build": "gulp sass"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/irbrocks/theme.git"
